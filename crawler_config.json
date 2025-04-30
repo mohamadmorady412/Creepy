@@ -1,0 +1,40 @@
+{
+    "crawler_config": {
+        "base_url": "https://www.digikala.com/search/",
+        "categories": [
+            {
+                "name": "beauty",
+                "path": "category-beauty/",
+                "enabled": true,
+                "max_pages": 3,
+                "params": {
+                    "sort": "newest",
+                    "brand": [],
+                    "price_range": [
+                        0,
+                        5000000
+                    ]
+                }
+            },
+            {
+                "name": "perfume",
+                "path": "category-perfume-all/",
+                "enabled": true,
+                "max_pages": 3,
+                "params": {
+                    "sort": "popularity",
+                    "brand": [
+                        "chanel",
+                        "dior"
+                    ],
+                    "price_range": []
+                }
+            }
+        ],
+        "global_settings": {
+            "delay_between_requests": 2,
+            "max_retries": 3,
+            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/91.0.4472.124"
+        }
+    }
+}
